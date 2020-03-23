@@ -9,9 +9,17 @@
             <div class="box">
                 <div class="content">
                     <h2>Wave Div</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultrices est eget ipsum vehicula euismod. Sed accumsan tristique metus, ac venenatis libero scelerisque faucibus. Etiam laoreet leo nec augue gravida mattis. Nulla facilisi. Phasellus tempus placerat justo, quis pharetra augue hendrerit in. Aliquam tincidunt magna vel quam sollicitudin, id consectetur metus vulputate. Aliquam nulla metus, lacinia et eleifend at, accumsan vitae turpis. In porta eu nisi ullamcorper viverra.</p>
+                    <p>Lorem ipsum dolor siamet, consectetur adipiscing elit. Pellentesque ultrices est eget ipsum vehicula euismod. Sed accumsan tristique metus, ac venenatis libero scelerisque faucibus. Etiam laoreet leo nec augue gravida mattis. Nulla facilisi. Phasellus tempus placerat justo, quis pharetra augue hendrerit in. Aliquam tincidunt magna vel quam sollicitudin, id consectetur metus vulputate. Aliquam nulla metus, lacinia et eleifend at, accumsan vitae turpis. In porta eu nisi ullamcorper viverra.</p>
                 </div>
             </div>
         </div>
     </body>
+    <svg>
+        <filter id="wavy">
+            <feTurbulence x="0" y="0" baseFrequency="0.02" numOctaves="5" seed="2">
+                <animate attributeName="baseFrequency" dur="60s" values="0.02;0.05;0.02" repeatCount="indefinite"/>
+            </feTurbulence>
+            <feDisplacementMap in="SourceGraphic" scale="30"/>
+        </filter>
+    </svg>
 </html>
