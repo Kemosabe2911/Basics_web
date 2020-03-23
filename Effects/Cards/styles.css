@@ -10,6 +10,7 @@ body{
     min-height: 100vh;
     background: #000000;
 }
+/* Wavy Div */
 .container{
     position: relative;
     display: flex;
@@ -65,3 +66,12 @@ svg{
     width: 0;
     height: 0;
 } 
+/* Wavy Div End */
+/* Card Flip*/
+.card_middle .front img{
+    width: 50vh;
+    height: 50vh;
+}
+.card_middle{
+    margin-left: 10vh;
+}
