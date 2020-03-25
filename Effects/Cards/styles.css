@@ -68,10 +68,64 @@ svg{
 } 
 /* Wavy Div End */
 /* Card Flip*/
-.card_middle .front img{
-    width: 50vh;
-    height: 50vh;
+.middle{
+    position: absolute;
+}   
+.card{
+    margin-left: 100vh;
+    margin-top: 10vh;
+    cursor: pointer;
+    width: 340px;
+    height: 480px;
 }
-.card_middle{
-    margin-left: 10vh;
+.front, .back{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    transition: transform .6s linear;
+}
+.front img{
+    height: 100%;
+    width: 300px;
+    height: 400px;
+}
+.front{
+    transform: perspective(600px) rotateY(0deg);
+}
+.back{
+    background: #f1f1f1;
+    transform: perspective(600px) rotateY(180deg);
+    width: 300px;
+    height: 400px;
+}
+.back-content{
+    padding-top: 3vh;
+    color: #2c3e50;
+    text-align: center;
+    width: 100%;
+}
+.sm{
+    margin: 20px 0;
+}
+.sm a{
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    color: #2c3e50;
+    font-size: 18px;
+    transition: 0.4s;
+}
+.sm a:hover{
+    background: #2c3e50;
+    color: #ffffff;
+}
+.card:hover > .front{
+    transform: perspective(600px) rotateY(-180deg);
+}
+.card:hover> .back{
+    transform: perspective(600px) rotateY( 0deg);
 }
