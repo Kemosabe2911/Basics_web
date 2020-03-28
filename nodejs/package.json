@@ -1,0 +1,11 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "Tutorial",
+  "main": "index.js",
+  "scripts": {
+    "test": "Tutorial for beginners"
+  },
+  "author": "Kemosabe2911",
+  "license": "ISC"
+}
