@@ -101,6 +101,7 @@ a:hover{
         border: 0;
     }
     .button a{
+        text-decoration: none;
         padding: 7px 15px;
         background: teal;
         border: 1px solid #006d6d;
@@ -108,5 +109,39 @@ a:hover{
     }
     .button.secondary a{
         background: transparent;
+    }
+    .button a:hover{
+        transition: all .25s;
+    }
+    .button:not(.secondary) a:hover{
+        background: #006d6d;
+        border-color: #005959;
+    }
+    .button.secondary  a:hover{
+        color: #ddd;
+    }
+}
+@media (min-width: 768px){
+    .item{
+        display: block;
+        width: auto;
+    }
+    .toggle{
+        display: none;
+    }
+    .logo{
+        order: 0;
+    }
+    .item{
+        order: 1;
+    }
+    .button{
+        order: 2;
+    }
+    .menu li{
+        padding: 15px 10px;
+    }
+    .menu li.button{
+        padding-right: 0;
     }
 }
