@@ -1,4 +1,11 @@
  // Shorthand for $( document ).ready()
 $(function() {
-    console.log( "ready!" );
+    $(".toggle").on("click",function(){
+        if($(".item").hasClass("active")){
+            $(".item").removeClass("active");
+        }
+         else{
+            $(".item").addClass("active");
+        }
+    })
 });

@@ -82,7 +82,7 @@ a:hover{
 }
 
 /*Tablet Menu*/
-@media(min-width: 468px){
+@media all and (min-width: 468px){
     .menu{
         justify-content: center;
     }
@@ -121,7 +121,7 @@ a:hover{
         color: #ddd;
     }
 }
-@media (min-width: 768px){
+@media all and (min-width: 768px){
     .item{
         display: block;
         width: auto;
