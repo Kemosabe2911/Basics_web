@@ -7,5 +7,8 @@
     "test": "Tutorial for beginners"
   },
   "author": "Kemosabe2911",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
 }
