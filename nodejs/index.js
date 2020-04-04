@@ -10,6 +10,14 @@ const server= http.createServer((req,res) =>{
             res.end(content);
         })
     }
+    if(req.url=== '/abi/users'){
+        const users = [
+            { name: 'Kemosabe', age: 20},
+            { name: 'Skeletal King', age: 30}
+        ];
+        res.writeHead(200, {'Content-Type': 'application/json'});
+        res.end(JSON.stringify(users));
+    }
 });
 const PORT= process.env.PORT || 5000;
 
