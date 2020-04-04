@@ -4,7 +4,7 @@ const fs= require('fs');
 
 const server= http.createServer((req,res) =>{
     if(req.url=== '/'){
-        res.end('<h1>Home</h1>');
+        res.end('<h1>HomePage</h1>');
     }
 });
 const PORT= process.env.PORT || 5000;
