@@ -1,0 +1,39 @@
+.navbar-brand{
+    font-size: 2em;
+}
+.w-80{
+    width: 75%;
+}
+.f-2{
+    font-size: 2em;
+}
+.tl-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tl-container div{
+    width: 100%;
+}
+.tl-container .leader-board{
+    order: 2;
+}
+.tl-container .task{
+    order: 1;
+}
+
+
+
+@media(min-width: 768px){
+    .tl-container{
+        flex-direction: row;
+    }
+    .tl-container .leader-board{
+        order: 1;
+        flex: 2;
+    }
+    .tl-container .task{
+        order: 2;
+        flex: 1;
+    }
+}
