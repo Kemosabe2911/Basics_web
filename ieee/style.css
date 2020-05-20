@@ -58,7 +58,11 @@ body{
 .frm-1 h2{
     text-align: center;
 }
-
+.frm-1 button{
+    font-size: 2em;
+    width: 80%;
+    margin: 10px 60px;
+}
 
 
 @media(min-width: 768px){
