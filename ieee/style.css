@@ -1,3 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    box-sizing: border-box;
+}
+
+
+
 .navbar{
     font-size: 3em;
 }
@@ -19,10 +29,27 @@
     width: 100%;
 }
 .tl-container .leader-board{
+    background: blue;
+    color: aliceblue;
     order: 2;
 }
 .tl-container .task{
+    background: yellow;
     order: 1;
+}
+.tl-container .leader-board .ld-container{
+    height: 350px;
+    width: 350px;
+    color: #000000;
+    background: #ffffff;
+    margin: 20px auto;
+    position: relative;
+}
+.tl-container .leader-board .ld-container p{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-25%);
 }
 
 
