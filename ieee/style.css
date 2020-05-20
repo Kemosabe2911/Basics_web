@@ -4,12 +4,14 @@
 }
 body{
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 
 
 .navbar{
     font-size: 3em;
+    margin-bottom: 20px;
 }
 .navbar .logo{
     text-align: center;
@@ -44,6 +46,7 @@ body{
     background: #ffffff;
     margin: 20px auto;
     position: relative;
+    margin-bottom: 50px;
 }
 .tl-container .leader-board .ld-container p{
     position: relative;
@@ -65,5 +68,12 @@ body{
     .tl-container .task{
         order: 2;
         flex: 1;
+    }
+    .tl-container .leader-board .ld-container{
+        width: 900px;
+        height: 650px;
+    }
+    .tl-container .leader-board .ld-container p{
+        transform: translate(-10%);
     }
 }
