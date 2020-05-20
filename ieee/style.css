@@ -21,6 +21,7 @@ body{
 }
 .f-2{
     font-size: 2em;
+    margin: 10px;
 }
 .tl-container{
     display: flex;
