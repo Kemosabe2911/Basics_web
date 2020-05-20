@@ -1,5 +1,8 @@
-.navbar-brand{
-    font-size: 2em;
+.navbar{
+    font-size: 3em;
+}
+.navbar .logo{
+    text-align: center;
 }
 .w-80{
     width: 75%;
