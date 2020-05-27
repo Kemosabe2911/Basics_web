@@ -55,6 +55,26 @@ body{
     left: 50%;
     transform: translate(-25%);
 }
+
+.tasks-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tasks-list a{
+    font-size: 4em;
+    margin: 20px;
+    color: blue;
+    border: 2px solid #000000;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+
+
+
+
 .frm-1 h2{
     text-align: center;
 }
