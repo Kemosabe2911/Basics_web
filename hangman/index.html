@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Online Hangman</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <link href='https://fonts.googleapis.com/css?family=Architects+Daughter|Gloria+Hallelujah' rel='stylesheet' type='text/css'>
     <script type="text/javascript" src="script.js"></script>
     <script>window.onload = draw;</script>
@@ -15,15 +15,48 @@
     <div id="introPage">
         <div id="introText">
             <p>Welcome to online hangman!</p>
+            <p>Select single player or multiplayer to begin!</p>
             <div id="buttonContainer">
-                <div id="sp" onclick="sp()">Play</div>
+                <div id="sp" onclick="sp()">Single player</div>
+                <div id="mp" onclick="mp()">Multiplayer</div>
             </div>
         </div>
         <canvas id="homeHangman" width="300px" height="300px"></canvas>
     </div>
     <div id="singlePage">
-
-
+        <p>Pick a category:</p>
+        <div id="categoryHolder">
+            <div id="category">
+                <div id="category1">
+                    <div id="phrases" onclick="phrase()">Phrases</div>
+                    <div id="movies" onclick="movie()">Movies</div>
+                </div>
+                <div id="category2">
+                    <div id="songs" onclick="song()">Songs</div>
+                    <div id="challenge" onclick="challenge()">Challenge</div>
+                </div>
+            </div>
+            <div id="mp1" onclick="mp()">Multiplayer</div>
+        </div>
+    </div>
+    <div id="multiPage">
+        <div id="wordInput">
+            <div id="multiText">
+                <p>The phrase guesser should look away from the screen now.</p>
+                <p>Phrase creator, type your phrase and click submit!</p>
+            </div>
+            <div id="inputContainer">
+                <textarea id="input" cols="40" rows="5" onkeyup = "countChars('input','charcount');" onkeydown = "countChars('input','charcount');" onmouseout = "countChars('input','charcount');"></textarea>
+                <span id="restriction">Only special characters allowed: <span style="font-weight: 700;">? ! , . ' &ndash;</span></span>
+            </div>
+            <div id="characterCount">
+                <p id="charContain">
+                    <span id="charcount">0</span>/100 characters
+                </p>
+                <div id="submit" onclick="readText()">Submit</div>
+            </div>
+            <div id="sp1" onclick="sp()">Single player</div>
+        </div>
     </div>
     <div id="gamePage">
         <p id="categoryName"></p>
@@ -339,7 +372,15 @@
         </div>
         <div id="again" onClick="reset()">Play again!</div>
         <div id="home" onClick="window.location.reload()">Main menu</div>
+        <p id="vidSent">Click <span id="vidLink" onClick="video()">here</span> to watch and learn how this website functions.</p>
     </div>
-    
+    <div id="videoPage">
+        <p id="vidHead">How this website works</p>
+        <iframe id ="video" width="800" height="450" src="https://www.youtube.com/embed/ZtNyfGyS00M" frameborder="0" allowfullscreen></iframe>
+        <iframe id ="videoTab" width="500" height="280" src="https://www.youtube.com/embed/ZtNyfGyS00M" frameborder="0" allowfullscreen></iframe>
+        <iframe id ="videoMob" width="300" height="170" src="https://www.youtube.com/embed/ZtNyfGyS00M" frameborder="0" allowfullscreen></iframe>
+        <p id="vidCaption"><i>Click <a href="https://youtu.be/ZtNyfGyS00M" target="_blank">here</a> to view this video in a separate tab.</i></p>
+        <div id="home1" onClick="window.location.reload()">Main menu</div>
+    </div>
 </body>
 </html>

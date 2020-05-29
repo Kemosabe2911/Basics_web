@@ -336,9 +336,7 @@ body, html, #category, #category1, #category2, #phrases, #movies, #songs, #chall
         #buttonContainer{
             width: 500px;
             height: 60px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            margin: 20px auto;
         }
         #sp, #mp, #sp1, #mp1{
             font-size: 25px;
@@ -522,7 +520,7 @@ body, html, #category, #category1, #category2, #phrases, #movies, #songs, #chall
             width: 90%;
             height: 50px;
         }
-        #sp, #sp1{
+        #sp, #mp, #sp1, #mp1{
             font-size: 20px;
             width: 140px;
             height: 50px;
