@@ -40,7 +40,7 @@ app.post('/',upload.single('image_upload'),(req,res)=>{
     var imagePath = req.file.path;
     console.log(req.file);
     console.log(imagePath);
-  res.render('index',{image: `images/${image}`});
+  res.render('index',{image: imagePath});
 }); 
 
 app.listen(PORT, () =>{
