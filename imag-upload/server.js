@@ -37,12 +37,10 @@ app.use(express.static(__dirname + '/images'));
 
 app.post('/',upload.single('image_upload'),(req,res)=>{
     var image= req.file.filename;
-    var imagePath = req.file.path.replace(/^public\//, '');
-    var dispImg= path.join('../',imagePath);
-    console.log(dispImg);
-    console.log(image);
+    var imagePath = req.file.path;
+    console.log(req.file);
     console.log(imagePath);
-  res.render('output',{image: imagePath});
+  res.render('output',{image: `images/${req.file.filename}`});
 }); 
 
 app.listen(PORT, () =>{
