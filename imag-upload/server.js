@@ -33,14 +33,14 @@ var storage = multer.diskStorage({
 
   var upload = multer({ storage: storage });
 
-app.use(express.static(__dirname + '/images'));
+  app.use(express.static('images'));
 
 app.post('/',upload.single('image_upload'),(req,res)=>{
     var image= req.file.filename;
     var imagePath = req.file.path;
     console.log(req.file);
     console.log(imagePath);
-  res.render('output',{image: `images/${req.file.filename}`});
+  res.render('index',{image: `images/${image}`});
 }); 
 
 app.listen(PORT, () =>{

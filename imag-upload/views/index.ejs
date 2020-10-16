@@ -10,5 +10,8 @@
         <input type="file" name="image_upload" />
         <input type="submit" value="Upload" />
       </form>
+
+    <br>
+    <img src="<%= typeof file != 'undefined' ? image: 'Error displaying image' %>" alt="Image" />    
 </body>
 </html>
